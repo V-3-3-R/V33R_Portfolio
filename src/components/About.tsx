@@ -16,10 +16,11 @@ export default function About() {
       <div className="grid md:grid-cols-[1.3fr_1fr] gap-14">
         <div className="space-y-5 text-ink-muted leading-relaxed text-lg">
           <p>
-            I'm a final-year Computer Engineering student at NMIMS University, and
-            a full-stack developer who ended up deep in generative AI almost by
-            accident — one LangChain project led to another, and now GenAI tooling
-            is most of what I build outside coursework.
+            I'm a Computer Engineering graduate from NMIMS University, and a
+            full-stack developer who ended up deep in generative AI almost by
+            accident — one LangChain project led to another, and now GenAI
+            tooling is most of what I build. I'm starting a Trainee — SAP role
+            at CyberTech Systems this October.
           </p>
           <p>
             My internship at CyberTech Systems had me designing and shipping
