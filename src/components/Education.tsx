@@ -38,14 +38,19 @@ export default function Education() {
           <div className="flex flex-wrap gap-2.5">
             {certificates.map((c, i) => (
               <motion.span
-                key={c}
+                key={c.name}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.35, delay: i * 0.05 }}
                 className="text-sm px-3.5 py-2 rounded-lg bg-bg-card border border-border text-ink-muted"
               >
-                {c}
+                <span className="block">{c.name}</span>
+                {c.issuer && (
+                  <span className="block text-xs text-ink-faint mt-0.5">
+                    {c.issuer}
+                  </span>
+                )}
               </motion.span>
             ))}
           </div>

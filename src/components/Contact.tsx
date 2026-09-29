@@ -85,6 +85,8 @@ export default function Contact() {
             <input
               required
               name="name"
+              aria-label="Your name"
+              autoComplete="name"
               value={form.name}
               onChange={handleChange}
               placeholder="Your name"
@@ -94,6 +96,8 @@ export default function Contact() {
               required
               type="email"
               name="email"
+              aria-label="Your email"
+              autoComplete="email"
               value={form.email}
               onChange={handleChange}
               placeholder="Your email"
@@ -103,6 +107,7 @@ export default function Contact() {
           <textarea
             required
             name="message"
+            aria-label="Your message"
             value={form.message}
             onChange={handleChange}
             placeholder="What do you want to build, or ask?"

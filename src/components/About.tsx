@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 const stats = [
   { value: "91%", label: "ACL injury prediction accuracy" },
   { value: "92%", label: "F1-score, dropout forecasting" },
-  { value: "1", label: "Production app, live on IIS" },
+  { value: "1", label: "Production app, live at CyberTech" },
   { value: "1", label: "Springer Nature publication" },
 ];
 
@@ -24,8 +24,8 @@ export default function About() {
           </p>
           <p>
             My internship at CyberTech Systems had me designing and shipping
-            CyberPulse end-to-end — from RBAC and audit logging to production
-            deployment on Windows IIS — while earlier work at LaundryGridz taught
+            CyberPulse — from architecture and RBAC to audit logging and a
+            production handoff — while earlier work at LaundryGridz taught
             me to prototype fast in Figma and translate that into real front-end
             code across a full booking flow.
           </p>

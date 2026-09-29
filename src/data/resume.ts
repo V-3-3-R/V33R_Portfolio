@@ -8,7 +8,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/veer-javadia",
   github: "https://github.com/V-3-3-R",
   summary:
-    "I build things that ship — production-deployed portals, GenAI tools people actually use, and ML models that get published. Full-stack developer with a research streak: co-authored work presented at NIT Jalandhar, and hands-on across Python, JavaScript, and the modern GenAI stack.",
+    "I build things that ship — a role-based portal live in production at CyberTech Systems, GenAI tools people actually use, and ML models that get published. Full-stack developer with a research streak: co-authored two research papers, one published in Springer Nature proceedings and presented at SoCTA 2025, NIT Jalandhar.",
 };
 
 export const experience = [
@@ -29,9 +29,9 @@ export const experience = [
     location: "Mumbai, India",
     incoming: false,
     points: [
-      "Built CyberPulse, a secure full-stack internal portal, using Node.js, Express, EJS, and SQL Server — now live in production on Windows IIS.",
-      "Implemented authentication, role-based access control, and audit logging to keep access and data integrity tight.",
-      "Worked Agile end-to-end: designed the backend, then handled dev, testing, and deployment myself.",
+      "Collaborated in an Agile team to design and build CyberPulse, a secure full-stack internal portal, from initial architecture through internal handoff.",
+      "Owned backend development — architecture and testing — ensuring scalability and reliability for cross-departmental internal use.",
+      "Translated access-control and audit requirements into a secure, role-based system used for daily internal operations.",
     ],
   },
   {
@@ -53,19 +53,19 @@ export const projects = [
     name: "GenAI Interview Prep Platform",
     period: "Jun 2026 — Jul 2026",
     flagship: true,
-    stack: ["React", "Node.js", "MongoDB", "Gemini API", "JWT"],
+    stack: ["React", "Node.js", "Express", "MongoDB", "Gemini API", "JWT"],
     description:
-      "A full-stack MERN app that turns a resume and job description into a personalized interview prep report — technical and behavioral questions, skill-gap analysis, and a day-by-day study plan, plus an exportable tailored resume PDF.",
+      "A full-stack MERN app that turns a resume and job description into a personalized interview prep report — technical and behavioral questions, skill-gap analysis, and a day-by-day study plan — with JWT auth and an exportable tailored resume PDF.",
     link: null,
-    github: "https://github.com/V-3-3-R",
+    github: "https://github.com/V-3-3-R/GenAI-Interview-Prep-Platform",
   },
   {
-    name: "Multi-Agent Research System",
+    name: "Multi-Agent System",
     period: "May 2026",
     flagship: false,
     stack: ["Python", "LangChain", "Groq", "Tavily", "Streamlit"],
     description:
-      "An autonomous 4-stage research pipeline — agents search, read, write, and critique in sequence — built on LLaMA 3.3 70B via Groq, cutting manual research effort significantly.",
+      "An autonomous 4-stage research pipeline — agents search, scrape, write, and self-critique in sequence — built on LLaMA 3.3 70B via Groq to cut manual research effort.",
     link: null,
     github: "https://github.com/V-3-3-R/Multi-Agent-System",
     pipeline: ["Search", "Read", "Write", "Critique"],
@@ -76,9 +76,69 @@ export const projects = [
     flagship: false,
     stack: ["Node.js", "Express", "EJS", "Bootstrap 5", "SQL Server"],
     description:
-      "Production-deployed, role-based internal portal for CyberTech — email-based auth, RBAC, HR CRUD modules, audit logging, SVG-based quality insights, and a Nodemailer email system. Live on Windows IIS.",
+      "Role-based internal portal for CyberTech, live in production — email-based auth, RBAC, audit logging, HR CRUD modules, and SVG-based Quality Insights dashboards.",
     link: null,
     github: null,
+  },
+  {
+    name: "Hybrid IDS",
+    period: "Nov 2025",
+    flagship: false,
+    stack: ["Python", "Scikit-learn", "Flask", "NSL-KDD"],
+    description:
+      "A hybrid network intrusion detection system that fuses Snort-style signature rules with a Random Forest anomaly detector trained on NSL-KDD, with a Flask dashboard for monitoring.",
+    link: null,
+    github: "https://github.com/V-3-3-R/HYBRID-IDS",
+  },
+  {
+    name: "Password Strength Checker",
+    period: "Nov 2025",
+    flagship: false,
+    stack: ["Python", "ipywidgets", "unittest"],
+    description:
+      "A modular password evaluator inspired by NIST SP 800-63B — scores length, character diversity, Shannon entropy, dictionary words, and predictable patterns, with actionable feedback and an interactive Colab/Jupyter UI.",
+    link: null,
+    github: "https://github.com/V-3-3-R/Password-Strength-Checker",
+  },
+  {
+    name: "Keylogger — Defensive Study",
+    period: "Nov 2025",
+    flagship: false,
+    stack: ["Python", "Security Research"],
+    description:
+      "An educational study of how keystroke capture works, so it can be recognised and defended against. Documented with consent-first, isolated-lab-only usage guidelines — for learning, not surveillance.",
+    link: null,
+    github: "https://github.com/V-3-3-R/KEYLOGGER",
+  },
+  {
+    name: "EmotionMirror",
+    period: "Nov 2025",
+    flagship: false,
+    stack: ["JavaScript", "face-api.js", "TensorFlow.js", "Chart.js", "Tailwind CSS"],
+    description:
+      "A privacy-first emotion detection and wellness tracker that runs entirely in the browser — reads 7 facial expressions from the webcam, with mood analytics, journaling, and JSON export. No data leaves the device.",
+    link: null,
+    github: "https://github.com/V-3-3-R/EMOTION-MIRROR",
+  },
+  {
+    name: "House Price Prediction",
+    period: "Nov 2025",
+    flagship: false,
+    stack: ["Python", "Scikit-learn", "XGBoost", "Pandas"],
+    description:
+      "Predicts California house prices from user-entered features. Compares Linear Regression, Random Forest, Gradient Boosting, and XGBoost (best R² ≈ 0.84), with EDA, feature engineering, and an interactive prediction prompt.",
+    link: null,
+    github: "https://github.com/V-3-3-R/House-Price-Prediction-On-User-Based-Inputs",
+  },
+  {
+    name: "Dropout Prediction Model",
+    period: "Sep 2025 — Oct 2025",
+    flagship: false,
+    stack: ["Python", "Scikit-learn", "Pandas"],
+    description:
+      "Ensemble system — Logistic Regression, Random Forest, Gradient Boosting — reaching a 92% F1-score forecasting student dropout on a simulated JEE-aspirant dataset, with feature-importance visualizations.",
+    link: null,
+    github: "https://github.com/V-3-3-R/Dropout-Prediction",
   },
   {
     name: "Early Athlete Injury Prediction",
@@ -88,41 +148,32 @@ export const projects = [
     description:
       "91% accuracy predicting ACL injury risk, with SHAP-based explainability and an interactive prediction UI. Published in Springer Nature proceedings, presented at SoCTA 2025, NIT Jalandhar.",
     link: null,
-    github: "https://github.com/V-3-3-R",
+    github:
+      "https://github.com/V-3-3-R/Early-Athlete-Injury-Prediction-Interpretable-Modeling-via-SHAP-Analysis",
     published: true,
-  },
-  {
-    name: "Dropout Prediction Model",
-    period: "Sep 2025 — Oct 2025",
-    flagship: false,
-    stack: ["Python", "Scikit-learn", "Pandas"],
-    description:
-      "Ensemble system — Logistic Regression, Random Forest, Gradient Boosting — reaching 92% F1-score forecasting student dropout on JEE data, with feature-importance visualizations.",
-    link: null,
-    github: "https://github.com/V-3-3-R",
   },
 ];
 
 export const skills = [
   {
     category: "Machine Learning",
-    items: ["Scikit-learn", "XGBoost", "Random Forest", "Gradient Boosting", "Logistic Regression", "Stacking Classifier", "SMOTE", "PCA", "Clustering", "SHAP"],
+    items: ["Scikit-learn", "XGBoost", "Random Forest", "Gradient Boosting", "Logistic Regression", "Stacking Classifier", "SMOTE", "PCA", "SHAP"],
   },
   {
     category: "Generative AI & Tools",
-    items: ["LangChain", "Groq", "Google Gemini API", "Hugging Face Transformers", "Agent Orchestration", "Multi-Agent Systems", "API Integration", "Streamlit"],
+    items: ["LangChain", "Groq", "Google Gemini API", "Agent Orchestration", "API Integration", "Streamlit"],
   },
   {
     category: "Web Development",
-    items: ["Node.js", "Express.js", "React.js", "EJS", "Bootstrap 5", "REST APIs", "JWT Auth", "RBAC", "Nodemailer", "Postman", "Figma"],
+    items: ["Node.js", "Express.js", "React.js", "EJS", "Bootstrap 5", "JWT Authentication", "RBAC", "Postman", "Figma"],
   },
   {
     category: "Programming",
-    items: ["Python", "JavaScript", "T-SQL", "HTML/CSS", "SQL"],
+    items: ["Python", "JavaScript", "T-SQL"],
   },
   {
     category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "Git", "n8n", "Windows IIS"],
+    items: ["AWS", "Git", "n8n"],
   },
   {
     category: "Databases",
@@ -130,7 +181,7 @@ export const skills = [
   },
   {
     category: "Data Engineering",
-    items: ["ETL Pipelines", "Pandas/NumPy", "Data Preprocessing", "BeautifulSoup", "Web Scraping"],
+    items: ["ETL Pipelines (Pandas/NumPy)", "Data Preprocessing"],
   },
   {
     category: "Visualization",
@@ -161,16 +212,17 @@ export const education = [
   {
     degree: "Secondary School Certificate (X)",
     school: "St. Xavier's High School, Fort — 82.60%",
-    period: "Jun 2018 — Mar 2019",
+    period: "Jun 2008 — Mar 2019",
     location: "Mumbai, India",
   },
 ];
 
-export const certificates = [
-  "AWS Academy Graduate — Cloud Architecting",
-  "GenAI 101 — Mastering LLMs",
-  "Introduction to Cloud Security",
-  "SoCTA 2025 — Springer Nature Paper Presentation",
-  "IoT Security Specialist Program",
-  "Full Stack Developer Course",
+export const certificates: { name: string; issuer?: string }[] = [
+  { name: "AWS Academy Graduate — Cloud Architecting", issuer: "AWS Academy" },
+  { name: "GenAI 101 — Mastering LLMs", issuer: "Simplilearn" },
+  { name: "Introduction to Generative AI", issuer: "Google Cloud Skills Boost" },
+  { name: "Full Stack Developer Course", issuer: "Simplilearn" },
+  { name: "SoCTA 2025 — Springer Nature Paper Presentation", issuer: "NIT Jalandhar" },
+  { name: "Introduction to Cloud Security" },
+  { name: "IoT Security Specialist Program" },
 ];

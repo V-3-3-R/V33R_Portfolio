@@ -13,12 +13,12 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
       whileHover={{ y: -4 }}
       className={`group rounded-2xl border p-6 md:p-7 flex flex-col transition-colors ${
         project.flagship
-          ? "border-accent/50 bg-gradient-to-b from-bg-card to-bg-elevated md:col-span-2"
-          : "border-border bg-bg-card hover:border-border-bright"
+          ? "border-accent/50 bg-gradient-to-b from-bg-card to-bg-elevated md:col-span-2 lg:col-span-3"
+          : "border-border bg-bg-card hover:border-border-bright md:last:col-span-2 lg:last:col-span-1"
       }`}
     >
       <div className="flex items-start justify-between gap-4 mb-3">
-        <h3 className="font-display text-xl font-semibold text-ink">
+        <h3 className="font-display text-xl font-semibold text-ink leading-snug">
           {project.name}
         </h3>
         <div className="flex items-center gap-3 shrink-0">
@@ -82,7 +82,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
         ))}
       </div>
 
-      <div className="mt-3 font-mono text-xs text-ink-faint">
+      <div className="mt-4 font-mono text-xs text-ink-faint">
         {project.period}
       </div>
     </motion.div>
@@ -97,7 +97,7 @@ export default function Projects() {
     >
       <SectionHeader path="projects" title="Things I've built." />
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((p, i) => (
           <ProjectCard project={p} index={i} key={p.name} />
         ))}

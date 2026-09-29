@@ -11,7 +11,7 @@ export default function Experience() {
       <SectionHeader path="experience" title="Where I've worked." />
 
       <div className="relative pl-8 md:pl-10">
-        <div className="absolute left-[7px] md:left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-accent via-accent-2 to-transparent" />
+        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-accent via-accent-2 to-transparent" />
 
         <div className="space-y-14">
           {experience.map((job, i) => (
