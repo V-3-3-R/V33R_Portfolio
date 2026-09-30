@@ -54,6 +54,13 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
         </div>
       )}
 
+      {project.accepted && (
+        <div className="inline-flex items-center gap-1.5 text-xs font-mono text-signal mb-3 w-fit">
+          <BookOpen size={13} />
+          paper accepted — IEEE RCSM 2025
+        </div>
+      )}
+
       <p className="text-ink-muted text-sm leading-relaxed mb-5">
         {project.description}
       </p>

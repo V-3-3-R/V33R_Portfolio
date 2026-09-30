@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 const stats = [
   { value: "91%", label: "ACL injury prediction accuracy" },
   { value: "92%", label: "F1-score, dropout forecasting" },
-  { value: "1", label: "Production app, live at CyberTech" },
+  { value: "1", label: "Internal portal built at CyberTech" },
   { value: "1", label: "Springer Nature publication" },
 ];
 
@@ -23,9 +23,9 @@ export default function About() {
             at CyberTech Systems this October.
           </p>
           <p>
-            My internship at CyberTech Systems had me designing and shipping
-            CyberPulse — from architecture and RBAC to audit logging and a
-            production handoff — while earlier work at LaundryGridz taught
+            My internship at CyberTech Systems had me designing and building
+            CyberPulse, a secure internal portal — from architecture and RBAC
+            to audit logging — while earlier work at LaundryGridz taught
             me to prototype fast in Figma and translate that into real front-end
             code across a full booking flow.
           </p>
@@ -33,7 +33,9 @@ export default function About() {
             On the research side, I co-authored a paper on early athlete injury
             prediction, published in Springer Nature proceedings and presented at
             SoCTA 2025, NIT Jalandhar — using XGBoost and SHAP to make the model's
-            predictions explainable, not just accurate.
+            predictions explainable, not just accurate. A second paper, on
+            student dropout prediction in online education, has been accepted
+            at IEEE RCSM 2025.
           </p>
         </div>
 

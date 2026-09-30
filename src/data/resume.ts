@@ -1,14 +1,14 @@
 export const profile = {
   name: "Veer Prakash Javadia",
   shortName: "Veer Javadia",
-  title: "Full-Stack Developer & AI/ML Engineer",
+  title: "Computer Engineer",
   location: "Mumbai, India",
   email: "veerjavadia@gmail.com",
   phone: "+91 90823 54425",
   linkedin: "https://linkedin.com/in/veer-javadia",
   github: "https://github.com/V-3-3-R",
   summary:
-    "I build things that ship — a role-based portal live in production at CyberTech Systems, GenAI tools people actually use, and ML models that get published. Full-stack developer with a research streak: co-authored two research papers, one published in Springer Nature proceedings and presented at SoCTA 2025, NIT Jalandhar.",
+    "I build things end to end — a secure role-based internal portal at CyberTech Systems, GenAI tools people actually use, and ML models that get published. Full-stack developer with a research streak: co-authored two research papers — one published in Springer Nature proceedings and presented at SoCTA 2025, NIT Jalandhar, and one accepted at IEEE RCSM 2025.",
 };
 
 export const experience = [
@@ -76,7 +76,7 @@ export const projects = [
     flagship: false,
     stack: ["Node.js", "Express", "EJS", "Bootstrap 5", "SQL Server"],
     description:
-      "Role-based internal portal for CyberTech, live in production — email-based auth, RBAC, audit logging, HR CRUD modules, and SVG-based Quality Insights dashboards.",
+      "Role-based internal portal built for CyberTech — email-based auth, RBAC, audit logging, HR CRUD modules, and SVG-based Quality Insights dashboards.",
     link: null,
     github: null,
   },
@@ -139,6 +139,7 @@ export const projects = [
       "Ensemble system — Logistic Regression, Random Forest, Gradient Boosting — reaching a 92% F1-score forecasting student dropout on a simulated JEE-aspirant dataset, with feature-importance visualizations.",
     link: null,
     github: "https://github.com/V-3-3-R/Dropout-Prediction",
+    accepted: true,
   },
   {
     name: "Early Athlete Injury Prediction",
@@ -189,12 +190,30 @@ export const skills = [
   },
 ];
 
-export const research = {
-  title: "Early Athlete Injury Prediction",
-  venue: "Springer Nature Proceedings — SoCTA 2025, NIT Jalandhar",
-  description:
-    "Co-authored research on predicting ACL injury risk in athletes using XGBoost, reaching 91% accuracy with SHAP-based explainability — presented at SoCTA 2025.",
-};
+export const research: {
+  title: string;
+  status: "published" | "accepted";
+  venue: string;
+  authors?: string;
+  description: string;
+}[] = [
+  {
+    title: "Early Athlete Injury Prediction",
+    status: "published",
+    venue: "Springer Nature Proceedings — SoCTA 2025, NIT Jalandhar",
+    authors: "Tushar Sinha, Veer Javadia, Satyam Shukla — NMIMS",
+    description:
+      "Co-authored research on predicting ACL injury risk in athletes using XGBoost, reaching 91% accuracy with SHAP-based explainability — presented at SoCTA 2025.",
+  },
+  {
+    title: "Big Data Analytics in Online Education: Learning Behaviour and Dropout Prediction",
+    status: "accepted",
+    venue: "Accepted — IEEE RCSM 2025, MANIT Bhopal",
+    authors: "Tushar Sinha, Veer Javadia, Satyam Shukla — NMIMS",
+    description:
+      "Co-authored research on learning behaviour and student dropout prediction in online education, accepted in Nov 2025 at the 1st IEEE International Conference on Recent Trends in Computing and Smart Mobility. Not yet presented or published.",
+  },
+];
 
 export const education = [
   {

@@ -1,6 +1,6 @@
 # V33R Portfolio
 
-Personal portfolio of **Veer Javadia** — Full-Stack Developer & AI/ML Engineer.
+Personal portfolio of **Veer Javadia** — Computer Engineer.
 
 Built to be fast, dark, and a little kinetic: smooth scroll-triggered animations, a working contact form, and content pulled straight from a single source of truth (`src/data/resume.ts`) instead of copy-pasted across components.
 
